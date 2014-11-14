@@ -33,7 +33,11 @@
 	margin-bottom: 15px;
 }
 
-.customer p#edit_link {
+.customer p.edit_link {
 	color: #DDD;
 	float: right;
+}
+
+.customer p.edit_link:hover {
+	color: #DDD;
 }

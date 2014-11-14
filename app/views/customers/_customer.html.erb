@@ -1,5 +1,8 @@
 <div class="customer">
-	<p id="edit_link"><%= link_to 'edit x', edit_customer_path(customer) %></p>
+	<p class="edit_link">
+		<%= link_to 'edit', edit_customer_path(customer) %>
+		<%= link_to 'x', customer, method: :delete, data: { confirm: 'Are you sure?' } %>
+	</p>
 	
 	<h2><%= customer.full_name %></h2>
 	
