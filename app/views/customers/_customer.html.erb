@@ -1,0 +1,18 @@
+<div class="customer">
+	<p id="edit_link"><%= link_to 'edit x', edit_customer_path(customer) %></p>
+	
+	<h2><%= customer.full_name %></h2>
+	
+	<% if customer.image.present? %>
+		<%= image_tag customer.image %>
+	<% end %>
+	<!--<image_tag("icon.png", size: "16x10", alt: "Edit Entry") -->
+	
+	<p><strong>Phone: </strong><%= customer.phone_number %></p>
+	
+	<% if customer.email.present? %>
+		<p><strong>Email: </strong><%= customer.email %></p>
+    <% end %>
+
+    <p><strong>Notes: </strong><%= customer.notes %></p>
+</div>
